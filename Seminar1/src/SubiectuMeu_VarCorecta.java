@@ -66,6 +66,7 @@ class Cititor {
 
         List<Cititor> listaCititori = new ArrayList<>(); //schimbare nume variabila din lista in listaCititori pentru o sugestivitate mai buna
         List<String> sectoare = new ArrayList<>(); //declarare variabila pe o singura linie
+        //utilizarea spatiilor intre declaratii pentru o mai usoara citire a programului
         try(Connection con = DriverManager.getConnection(url);
             Statement s = con.createStatement();
             ResultSet date = s.executeQuery(selectQuery))/*transformare string hardcodat intr-o variabila constanta*/{
