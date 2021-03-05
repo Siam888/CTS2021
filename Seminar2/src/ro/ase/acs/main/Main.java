@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         IoC ioc = new IoC();
         ioc.register(Readable.class,Reader.class);
-        ioc.resolve();
+        ioc.<Readable>resolve();
 
         Orchestrator orchestrator = new Orchestrator(new Reader() , new ConsoleWriter());
         orchestrator.execute();
