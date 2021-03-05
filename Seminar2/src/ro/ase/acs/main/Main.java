@@ -5,15 +5,16 @@ import ro.ase.acs.readers.Reader;
 import ro.ase.acs.writers.ConsoleWriter;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException, NoSuchMethodException {
+    public static void main(String[] args) throws IOException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         IoC ioc = new IoC();
         ioc.register(Readable.class,Reader.class);
-        ioc.<Readable>resolve();
+        Readable readable = (Readable) ioc.resolve(Readable.class).getConstructor().newInstance();
 
-        Orchestrator orchestrator = new Orchestrator(new Reader() , new ConsoleWriter());
+        Orchestrator orchestrator = new Orchestrator(readable , new ConsoleWriter());
         orchestrator.execute();
     }
 }
