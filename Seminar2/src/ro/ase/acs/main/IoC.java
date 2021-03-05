@@ -13,7 +13,8 @@ public class IoC {
         }
     }
 
-    public <T> T resolve (){
-        return (T) map.get(getClass());
+    public <T> T resolve () throws NoSuchMethodException {
+        Method m = this.getClass().getMethod("resolve");
+        return (T) map.get(m.getReturnType());
     }
 }
