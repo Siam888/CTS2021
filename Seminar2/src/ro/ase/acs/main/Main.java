@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, NoSuchMethodException {
         IoC ioc = new IoC();
         ioc.register(Readable.class,Reader.class);
         ioc.<Readable>resolve();
