@@ -47,7 +47,7 @@ public class Main {
 
         List<Integer> list;
         list = Arrays.asList(3, 4, 1, 5, 1, 8, 12);
-        long numarNumerePare = 0;
+        long numarNumerePare;
         numarNumerePare = list.stream().filter(e -> (e % 2 == 0)).count();
         System.out.println(numarNumerePare);
 
