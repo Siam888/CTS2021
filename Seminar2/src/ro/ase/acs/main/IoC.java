@@ -1,5 +1,6 @@
 package ro.ase.acs.main;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
@@ -13,8 +14,8 @@ public class IoC {
         }
     }
 
-    public Class<?> resolve (Class<?> aux) throws NoSuchMethodException {
+    public <T> T resolve (Class<?> aux) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         //Method m = this.getClass().getMethod("resolve");
-        return map.get(aux);
+        return (T) map.get(aux).getConstructor().newInstance();
     }
 }

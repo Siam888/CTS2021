@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) throws IOException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         IoC ioc = new IoC();
         ioc.register(Readable.class,Reader.class);
-        Readable readable = (Readable) ioc.resolve(Readable.class).getConstructor().newInstance();
+        Readable readable =  ioc.resolve(Readable.class);
 
         Orchestrator orchestrator = new Orchestrator(readable , new ConsoleWriter());
         orchestrator.execute();
