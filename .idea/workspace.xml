@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4368c65-3b81-44d9-8a62-0a59f807faaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Seminar2/src/ro/ase/acs/contracts/Readable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar2/src/ro/ase/acs/contracts/Writeable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar2/src/ro/ase/acs/main/Orchestrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar2/src/ro/ase/acs/readers/Reader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar2/src/ro/ase/acs/writers/ConsoleWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar2/src/ro/ase/acs/writers/FileWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar2/Log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar2/Logger.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar4/Seminar4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar4/src/ro/ase/acs/cts/logger/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar4/src/ro/ase/acs/cts/logger/LoggerSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar4/src/ro/ase/acs/cts/logger/LoggerSingletonV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar4/src/ro/ase/acs/cts/logger/LoggerSingletonWithEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar4/src/ro/ase/acs/cts/main/Gui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar4/src/ro/ase/acs/cts/main/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar2/.idea/modules.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,19 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -97,6 +87,7 @@
       <updated>1614257213882</updated>
       <workItem from="1614257215916" duration="1648000" />
       <workItem from="1614860514170" duration="472000" />
+      <workItem from="1616070860273" duration="102000" />
     </task>
     <servers />
   </component>
